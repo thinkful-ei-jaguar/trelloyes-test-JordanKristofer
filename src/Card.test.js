@@ -13,6 +13,7 @@ describe('<Card />', () => {
   });
 
   //Snapshot Testing
+  
   it('renders this UI as expected', () => {
     //render the component as JSON
     const tree = renderer
@@ -20,5 +21,6 @@ describe('<Card />', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+  
 });
 
